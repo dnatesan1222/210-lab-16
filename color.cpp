@@ -46,45 +46,31 @@ public:
 
 int main(){
     //first test
-    Color lavender;             //create object
+    Color black;		//create object and test default parameter
+    black.print();		//output what the object stored
+
+    Color skyBlue(153, 204, 255);	//test parameter constructor
+    skyBlue.print();
+
+    Color magenta(204, 0, 102);
+    magenta.print();
+
+    Color white(255);		//test partial constructor
+
+    Color turquoise(0, 102, 102);
+    turquoise.print();
+
+    Color lavender;
+    lavender.print();
     lavender.setRed(204);       //set values
     lavender.setGreen(204);
     lavender.setBlue(255);
-    lavender.print();           //output what the object stored
+    lavender.print();
 
-    //test getters
-    cout << "Lavender\nRed: " << lavender.getRed() << endl;
-    cout << "Blue: " << lavender.getBlue() << endl;
-    cout << "Green: " << lavender.getGreen() << endl;
+    Color gray(150);
+    gray.print();
 
-    Color skyBlue;
-    skyBlue.setRed(153);
-    skyBlue.setGreen(204);
-    skyBlue.setBlue(255);
-    skyBlue.print();
-
-    Color magenta;
-    magenta.setRed(204);
-    magenta.setGreen(0);
-    magenta.setBlue(102);
-    magenta.print();
-
-    Color turquoise;
-    turquoise.setRed(0);
-    turquoise.setGreen(102);
-    turquoise.setBlue(102);
-    turquoise.print();
-
-    Color pastelYellow;
-    pastelYellow.setRed(255);
-    pastelYellow.setGreen(255);
-    pastelYellow.setBlue(153);
-    pastelYellow.print();
-
-    Color salmon;
-    salmon.setRed(255);
-    salmon.setGreen(153);
-    salmon.setBlue(153);
+    Color salmon(255, 153, 153);
     salmon.print();
 
 }
