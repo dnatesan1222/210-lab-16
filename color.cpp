@@ -15,6 +15,12 @@ private:
 public:
 
     //Constructors
+    //simple default constructor
+    Color()			{red = 0; green = 0; blue = 0;}
+    //parameter constructor takes arguments and assigns them to the RGB values
+    Color(int r, int g, int b)	{red = r; green = g; blue = b;}
+    //partial constructor takes one value to assign to all the RGB values
+    Color(int c)		{red = c; green = c; blue = c;}
 
     // getters: no arguments, returns the stored values of the instance variables
     int getRed()                { return red; }
